@@ -11,6 +11,14 @@ namespace TaTeTi.Xml
     public static class XmlSudaca
     {
 
+        public static T Deserialize<T>(string xml)
+        {
+            TextReader reader = new StringReader(xml);
+            XmlSerializer s = new XmlSerializer(typeof(T));
+            return (T)s.Deserialize(reader);
+        }
+
+
         public static string Serialize<T>(T obj)
         {
             XmlSerializer s = new XmlSerializer(typeof(T));
