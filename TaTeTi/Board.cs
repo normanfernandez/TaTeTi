@@ -1,22 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace TaTeTi
 {
+    [Serializable]
     public class Board
     {
-        public Square[][] Squares { get; }
+        public List<List<Square>> Squares { get; }
 
         public Board()
         {
-            Squares = new Square[3][];
+            Squares = new List<List<Square>>();
             for (int i = 0; i < 3; i++)
             {
-                Squares[i] = new Square[3];
+                List<Square> row = new List<Square>();
                 for (int j = 0; j < 3; j++)
                 {
-                    Squares[i][j] = new Square();
+                    row.Add(new Square());
                 }
+                Squares.Add(row);
             }
         }
 

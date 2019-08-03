@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{377A3227-D1C6-4DAC-9761-34E49E70B828}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>TaTeTi.Cli</RootNamespace>
-    <AssemblyName>TaTeTi.Cli</AssemblyName>
+    <ProjectGuid>{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TaTeTi.Xml</RootNamespace>
+    <AssemblyName>TaTeTi.Xml</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="XmlSudaca.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TaTeTi.Xml\TaTeTi.Xml.csproj">
-      <Project>{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}</Project>
-      <Name>TaTeTi.Xml</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TaTeTi\TaTeTi.Models.csproj">
-      <Project>{8a91713e-a01d-4569-92b6-5a1a338ed989}</Project>
-      <Name>TaTeTi.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

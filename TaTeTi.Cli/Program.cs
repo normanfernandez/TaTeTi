@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaTeTi.Xml;
 
 namespace TaTeTi.Cli
 {
@@ -73,6 +74,9 @@ namespace TaTeTi.Cli
                     Console.ReadLine();
                     return;
                 }
+
+                Console.WriteLine(XmlSudaca.Serialize<Board>(board));
+
                 turn++;
             }
         }

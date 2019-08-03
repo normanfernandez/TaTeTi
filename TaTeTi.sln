@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaTeTi.Models", "TaTeTi\TaT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaTeTi.Cli", "TaTeTi.Cli\TaTeTi.Cli.csproj", "{377A3227-D1C6-4DAC-9761-34E49E70B828}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaTeTi.Xml", "TaTeTi.Xml\TaTeTi.Xml.csproj", "{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{377A3227-D1C6-4DAC-9761-34E49E70B828}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{377A3227-D1C6-4DAC-9761-34E49E70B828}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{377A3227-D1C6-4DAC-9761-34E49E70B828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
