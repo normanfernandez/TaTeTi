@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaTeTi", "TaTeTi\TaTeTi.csproj", "{8A91713E-A01D-4569-92B6-5A1A338ED989}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaTeTi.Models", "TaTeTi\TaTeTi.Models.csproj", "{8A91713E-A01D-4569-92B6-5A1A338ED989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaTeTi.Cli", "TaTeTi.Cli\TaTeTi.Cli.csproj", "{377A3227-D1C6-4DAC-9761-34E49E70B828}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8A91713E-A01D-4569-92B6-5A1A338ED989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A91713E-A01D-4569-92B6-5A1A338ED989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A91713E-A01D-4569-92B6-5A1A338ED989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377A3227-D1C6-4DAC-9761-34E49E70B828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377A3227-D1C6-4DAC-9761-34E49E70B828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377A3227-D1C6-4DAC-9761-34E49E70B828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377A3227-D1C6-4DAC-9761-34E49E70B828}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
