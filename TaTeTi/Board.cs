@@ -67,7 +67,14 @@ namespace TaTeTi
         {
             char xVal = (char)SquareValue.X;
             if (Squares[0][0].Char == xVal && Squares[0][1].Char == xVal && Squares[0][2].Char == xVal)
-                return true;
+                if (Squares[1][0].Char == xVal && Squares[1][1].Char == xVal && Squares[1][2].Char == xVal)
+                    if (Squares[2][0].Char == xVal && Squares[2][1].Char == xVal && Squares[2][2].Char == xVal)
+                        if (Squares[0][0].Char == xVal && Squares[1][0].Char == xVal && Squares[2][0].Char == xVal)
+                            if (Squares[0][1].Char == xVal && Squares[1][1].Char == xVal && Squares[2][1].Char == xVal)
+                                if (Squares[0][2].Char == xVal && Squares[1][2].Char == xVal && Squares[2][2].Char == xVal)
+                                    if (Squares[0][0].Char == xVal && Squares[1][1].Char == xVal && Squares[2][2].Char == xVal)
+                                        if (Squares[0][2].Char == xVal && Squares[1][1].Char == xVal && Squares[2][0].Char == xVal)
+                                            return true;
 
             // Poner otros ifs...
             return false;
@@ -77,7 +84,14 @@ namespace TaTeTi
         {
             char oVal = (char)SquareValue.O;
             if (Squares[0][0].Char == oVal && Squares[0][1].Char == oVal && Squares[0][2].Char == oVal)
-                return true;
+                if (Squares[1][0].Char == oVal && Squares[1][1].Char == oVal && Squares[1][2].Char == oVal)
+                    if (Squares[2][0].Char == oVal && Squares[2][1].Char == oVal && Squares[2][2].Char == oVal)
+                        if (Squares[0][0].Char == oVal && Squares[1][0].Char == oVal && Squares[2][0].Char == oVal)
+                            if (Squares[0][1].Char == oVal && Squares[1][1].Char == oVal && Squares[2][1].Char == oVal)
+                                if (Squares[0][2].Char == oVal && Squares[1][2].Char == oVal && Squares[2][2].Char == oVal)
+                                    if (Squares[0][0].Char == oVal && Squares[1][1].Char == oVal && Squares[2][2].Char == oVal)
+                                        if (Squares[0][2].Char == oVal && Squares[1][1].Char == oVal && Squares[2][0].Char == oVal)
+                                            return true;
             return false;
         }
     }
