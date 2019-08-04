@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -52,8 +53,9 @@ namespace TaTeTi.Cli
                 if (turn % 2 == 0)
                     if (board.WinX())
                     {
+                        GuardarXML(board);
                         Console.WriteLine("Gana X");
-                        Console.WriteLine(board.ToString());
+                      
                         Console.ReadLine();
                         return;
                     }
@@ -61,16 +63,18 @@ namespace TaTeTi.Cli
                 if (turn % 2 == 0)
                     if (board.WinO())
                     {
+                        GuardarXML(board);
                         Console.WriteLine("Gana O");
-                        Console.WriteLine(board.ToString());
+                     
                         Console.ReadLine();
                         return;
                     }
 
                 if (turn == 9)
                 {
+                    GuardarXML(board);
                     Console.WriteLine("No hay ganador");
-                    Console.WriteLine(board.ToString());
+                    
                     Console.ReadLine();
                     return;
                 }
@@ -78,6 +82,21 @@ namespace TaTeTi.Cli
                 Console.WriteLine(XmlSudaca.Serialize<Board>(board));
 
                 turn++;
+            }
+
+
+        }
+        public static void GuardarXML(Board board)
+        {
+            string rutaArchivo = "TA-TE-TI.xml";
+            using (FileStream fileStream = new FileStream(rutaArchivo, FileMode.Create))
+            {
+
+                string xmlData = XmlSudaca.Serialize(board);
+
+                StreamWriter writer = new StreamWriter(fileStream);
+                writer.Write(xmlData);
+                writer.Close();
             }
         }
     }

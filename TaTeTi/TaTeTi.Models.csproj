@@ -44,6 +44,13 @@
     <Compile Include="Board.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Square.cs" />
+    <Compile Include="XmlBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaTeTi.Xml\TaTeTi.Xml.csproj">
+      <Project>{BCEA2227-1F9F-4EE2-A0C1-B54434350CA5}</Project>
+      <Name>TaTeTi.Xml</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
