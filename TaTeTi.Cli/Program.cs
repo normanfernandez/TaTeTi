@@ -79,8 +79,6 @@ namespace TaTeTi.Cli
                     return;
                 }
 
-                Console.WriteLine(XmlSudaca.Serialize<Board>(board));
-
                 turn++;
             }
 
